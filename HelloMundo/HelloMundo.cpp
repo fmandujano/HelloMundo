@@ -16,6 +16,10 @@ int main(int argc, char** argv)
   {
     Sleep(atoi(argv[1]));
   }
-  std::cout << "Hello World!\n";
+  std::cout << "hola moundo!\n";
+
+  SYSTEM_INFO sisinfo;
+  GetSystemInfo( &sisinfo );
+  std::cout << sisinfo.wProcessorArchitecture << "\n";
 
 }
